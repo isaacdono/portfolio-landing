@@ -12,8 +12,8 @@ function Router() {
     <Switch>
       {/* Add pages below */}
       <Route path="/" component={LandingLtr} />
-      {/* Fallback to 404 */}
-      <Route component={NotFound} />
+      <Route path="/:rest*" component={LandingLtr} />
+      {/* Fallback to 404 - Removido temporariamente para o deploy funcionar em subpastas */}
     </Switch>
   );
 }
