@@ -6,9 +6,9 @@ export const PortfolioGallerySection = (): JSX.Element => {
           
           {/* Espaço para Foto */}
           <div className="shrink-0">
-            <div className="w-48 h-48 md:w-64 md:h-64 rounded-3xl bg-slate-200 overflow-hidden border-4 border-white shadow-xl">
+            <div className="w-48 h-48 md:w-64 md:h-64 rounded-3xl bg-slate-200 overflow-hidden border-4 border-slate-900 shadow-xl">
               <img 
-                src="/figmaAssets/8384950-1.png" 
+                src="/figmaAssets/20260411_093054.jpg.jpeg" 
                 alt="Isaac Oliveira" 
                 className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-500"
               />
@@ -17,14 +17,13 @@ export const PortfolioGallerySection = (): JSX.Element => {
 
           {/* Texto e Tags */}
           <div className="flex-1 space-y-6">
-            <h2 className="text-3xl font-bold text-slate-900 tracking-tight">Isaac Oliveira</h2>
+            <h2 className="text-3xl font-bold text-[#25D366] tracking-tight">Isaac Oliveira</h2>
             <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
-              Engenheiro de Computação em formação pela <span className="font-bold text-slate-900 underline decoration-[#25D366] underline-offset-4">UNICAMP</span>. 
-              Especialista em automação de fluxos de trabalho, integrações de sistemas e inteligência aplicada. 
-              Experiência técnica consolidada no <span className="font-bold text-slate-900">CPQD</span> e <span className="font-bold text-slate-900">Instituto Eldorado</span>.
+              Estudante de Engenharia de Computação na <span className="font-bold text-slate-900 underline decoration-[#25D366] underline-offset-4">UNICAMP</span>. 
+              Trabalho com automação de processos, integrações de sistemas e IA aplicada para reduzir tarefas manuais e organizar operações.
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
-              {["UNICAMP", "CPQD", "Eldorado", "Node.js", "Python", "n8n", "Docker"].map(tag => (
+              {["Google Workspace", "Python", "WhatsApp", "n8n", "APIs"].map(tag => (
                 <span key={tag} className="px-4 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-bold text-slate-500 uppercase tracking-widest shadow-sm">
                   {tag}
                 </span>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageSquare, Table, Calendar, Layout, Zap } from "lucide-react";
+import { ArrowRight, MessageSquare, Table, Calendar, Layout, Settings } from "lucide-react";
 
 export const HeroIntroSection = (): JSX.Element => {
   return (
@@ -10,7 +10,7 @@ export const HeroIntroSection = (): JSX.Element => {
           {/* Texto à Esquerda */}
           <div className="flex-1 space-y-8 text-left z-10">
             <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 leading-[0.95] tracking-tighter">
-              Integro sistemas e <span className="text-[#25D366]">automatizo processos</span> para sua empresa escalar.
+              Automatizo processos e conecto as <span className="text-[#25D366]">ferramentas que sua empresa já usa.</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-500 max-w-xl font-medium leading-relaxed">
               Crio automações para conectar WhatsApp, planilhas, agenda, CRM, APIs e tarefas internas, reduzindo trabalho manual e organizando a operação do seu negócio.
@@ -37,33 +37,36 @@ export const HeroIntroSection = (): JSX.Element => {
                 <path d="M400,200 C350,300 300,300 250,300" />
               </g>
 
-              {/* Centro */}
+              {/* Centro: Empresa (Ajustado para 60x60 e centralizado) */}
               <g transform="translate(220, 170)">
-                <rect width="60" height="60" rx="16" className="fill-slate-900" />
-                <Zap className="text-white w-6 h-6" x="18" y="18" />
+                <rect width="60" height="60" rx="16" className="fill-slate-900 shadow-lg" />
+                <Settings stroke="white" strokeWidth={2} className="w-6 h-6" x="18" y="18" />
               </g>
 
-              {/* Nós */}
+              {/* WhatsApp */}
               <g transform="translate(60, 175)">
-                <rect width="50" height="50" rx="12" className="fill-white stroke-slate-100" />
+                <rect width="50" height="50" rx="12" className="fill-white stroke-slate-100 shadow-sm" />
                 <MessageSquare className="text-[#25D366] w-5 h-5" x="15" y="15" />
                 <text x="25" y="65" textAnchor="middle" className="text-[10px] font-bold fill-slate-400 uppercase tracking-widest">WhatsApp</text>
               </g>
 
+              {/* Sheets */}
               <g transform="translate(225, 60)">
-                <rect width="50" height="50" rx="12" className="fill-white stroke-slate-100" />
+                <rect width="50" height="50" rx="12" className="fill-white stroke-slate-100 shadow-sm" />
                 <Table className="text-[#25D366] w-5 h-5" x="15" y="15" />
                 <text x="25" y="-10" textAnchor="middle" className="text-[10px] font-bold fill-slate-400 uppercase tracking-widest">Planilhas</text>
               </g>
 
+              {/* CRM */}
               <g transform="translate(390, 175)">
-                <rect width="50" height="50" rx="12" className="fill-white stroke-slate-100" />
+                <rect width="50" height="50" rx="12" className="fill-white stroke-slate-100 shadow-sm" />
                 <Layout className="text-[#25D366] w-5 h-5" x="15" y="15" />
                 <text x="25" y="65" textAnchor="middle" className="text-[10px] font-bold fill-slate-400 uppercase tracking-widest">CRM</text>
               </g>
 
+              {/* Agenda */}
               <g transform="translate(225, 290)">
-                <rect width="50" height="50" rx="12" className="fill-white stroke-slate-100" />
+                <rect width="50" height="50" rx="12" className="fill-white stroke-slate-100 shadow-sm" />
                 <Calendar className="text-[#25D366] w-5 h-5" x="15" y="15" />
                 <text x="25" y="70" textAnchor="middle" className="text-[10px] font-bold fill-slate-400 uppercase tracking-widest">Agenda</text>
               </g>
@@ -73,10 +76,11 @@ export const HeroIntroSection = (): JSX.Element => {
               <path d="M370,100 L280,170" className="stroke-slate-200 stroke-[1]" strokeDasharray="4" />
             </svg>
 
+            {/* Info Badge */}
             <div className="absolute top-1/4 right-0 bg-white p-3 rounded-xl shadow-lg border border-slate-50 hidden md:block">
               <div className="flex items-center gap-2">
                 <div className="h-2 w-2 rounded-full bg-[#25D366] animate-pulse" />
-                <p className="text-[10px] font-bold text-slate-800 uppercase tracking-tighter">Fluxo Ativo: API Integrada</p>
+                <p className="text-[10px] font-bold text-slate-800 uppercase tracking-tighter">Integrações Conectadas</p>
               </div>
             </div>
           </div>

@@ -9,9 +9,14 @@ import { ServiceOverviewSection } from "./sections/ServiceOverviewSection";
 import { SkillsMetricsSection } from "./sections/SkillsMetricsSection";
 import { TestimonialsHighlightSection } from "./sections/TestimonialsHighlightSection";
 
+import { AutomationFlowSection } from "./sections/AutomationFlowSection";
+
+import { IntegrationImageSection } from "./sections/IntegrationImageSection";
+
 const sections = [
   { id: "hero-intro", Component: HeroIntroSection },
   { id: "service-overview", Component: ServiceOverviewSection },
+  { id: "integration-image", Component: IntegrationImageSection },
   { id: "portfolio-gallery", Component: PortfolioGallerySection },
   { id: "footer-navigation", Component: FooterNavigationSection },
 ];
