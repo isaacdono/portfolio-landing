@@ -11,7 +11,6 @@ import { TestimonialsHighlightSection } from "./sections/TestimonialsHighlightSe
 
 const sections = [
   { id: "hero-intro", Component: HeroIntroSection },
-  { id: "for-who", Component: ForWhoSection },
   { id: "service-overview", Component: ServiceOverviewSection },
   { id: "portfolio-gallery", Component: PortfolioGallerySection },
   { id: "footer-navigation", Component: FooterNavigationSection },

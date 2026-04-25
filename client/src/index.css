@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,6 @@
   --background: 0 0% 100%;
   --foreground: 222 47% 11%;
   --primary: 175 100% 33%;
-  --accent: 221 83% 53%;
   --font-heading: 'Sora', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
 }
@@ -18,41 +17,14 @@
     font-family: var(--font-body);
     @apply bg-white text-slate-900 antialiased;
   }
-  h1, h2, h3, h4 {
+  h1, h2, h3 {
     font-family: var(--font-heading);
     @apply tracking-tight font-extrabold;
   }
 }
 
 @layer components {
-  .glass-card {
-    @apply backdrop-blur-2xl border border-slate-100 shadow-xl;
-    background-color: rgba(255, 255, 255, 0.6);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .glass-card:hover {
-    @apply border-slate-200 shadow-2xl;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-slate-700 to-slate-800;
-  }
-
-  .noise-bg {
-    position: relative;
-  }
-  
-  .noise-bg::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.02;
-    z-index: 1;
-    pointer-events: none;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  .card-simple {
+    @apply border border-slate-100 bg-slate-50/50 rounded-2xl p-6 transition-colors hover:border-slate-200;
   }
 }
