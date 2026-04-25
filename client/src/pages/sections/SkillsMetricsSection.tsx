@@ -1,15 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card";
 
 const leftColumnSkills = [
-  { name: "Interaction Design", value: 60 },
-  { name: "Usability Testing", value: 70 },
-  { name: "User Research", value: 45 },
+  { name: "Python / Node.js", value: 85 },
+  { name: "n8n / Automações", value: 90 },
+  { name: "APIs & Integrações", value: 80 },
 ];
 
 const rightColumnSkills = [
-  { name: "Figma", value: 95 },
-  { name: "Prototyping", value: 80 },
-  { name: "Information Architecture", value: 50 },
+  { name: "IA / Machine Learning", value: 75 },
+  { name: "Cloud / Docker", value: 70 },
+  { name: "Google Sheets/Drive/Agenda", value: 85 },
 ];
 
 const skillLabelClassName =
@@ -48,39 +48,17 @@ export const SkillsMetricsSection = (): JSX.Element => {
     <section className="relative w-full bg-grey px-6 py-[72px] sm:px-10 lg:px-[188px] lg:py-[90px]">
       <div className="mx-auto flex w-full max-w-[1064px] flex-col items-center gap-12 lg:gap-16">
         <header className="flex w-full max-w-[810px] flex-col items-center gap-6 text-center">
-          <h2 className="mt-[-1.00px] font-text-4xl-font-bold text-[length:var(--text-4xl-font-bold-font-size)] font-[number:var(--text-4xl-font-bold-font-weight)] tracking-[var(--text-4xl-font-bold-letter-spacing)] text-[#1f1f1f] leading-[var(--text-4xl-font-bold-line-height)] [font-style:var(--text-4xl-font-bold-font-style)]">
-            Core Design Skills
+          <h2 className="mt-[-1.00px] font-text-4xl-font-bold text-[length:var(--text-4xl-font-bold-size)] font-[number:var(--text-4xl-font-bold-font-weight)] leading-[var(--text-4xl-font-bold-line-height)] tracking-[var(--text-4xl-font-bold-letter-spacing)] text-[#1f1f1f] [font-style:var(--text-4xl-font-bold-font-style)]">
+            Habilidades Técnicas
           </h2>
           <p className="font-text-base-font-normal text-[length:var(--text-base-font-normal-font-size)] font-[number:var(--text-base-font-normal-font-weight)] tracking-[var(--text-base-font-normal-letter-spacing)] text-[#1f1f1f] leading-[var(--text-base-font-normal-line-height)] [font-style:var(--text-base-font-normal-font-style)]">
-            I excel in essential design skills, creating visually stunning and
-            functional digital experiences. From UI design to UX research, my
-            passion is to craft effective and memorable digital solutions.
+            Experiência prática em automações, integração de plataformas, agentes de IA, backend, cloud e ferramentas Google. Sempre aprendendo e pronto para novos desafios!
           </p>
         </header>
-        <Card className="w-full border-0 bg-transparent shadow-none">
-          <CardContent className="p-0">
-            <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:gap-[120px]">
-              <div className="flex flex-col gap-2">
-                {leftColumnSkills.map((skill) => (
-                  <SkillItem
-                    key={skill.name}
-                    name={skill.name}
-                    value={skill.value}
-                  />
-                ))}
-              </div>
-              <div className="flex flex-col gap-2">
-                {rightColumnSkills.map((skill) => (
-                  <SkillItem
-                    key={skill.name}
-                    name={skill.name}
-                    value={skill.value}
-                  />
-                ))}
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+        {/* Espaço reservado para imagens */}
+        <div className="flex w-full flex-wrap items-center justify-center gap-8 min-h-[200px]">
+          {/* Adicione imagens aqui */}
+        </div>
       </div>
     </section>
   );

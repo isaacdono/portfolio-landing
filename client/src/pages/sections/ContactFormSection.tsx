@@ -33,7 +33,7 @@ const _socialIcons = [
   { alt: "Social icon 4", src: "/figmaAssets/social-icons.svg#icon-4" },
 ];
 
-export const ContactFormSection = (): JSX.Element => {
+// export const ContactFormSection = (): JSX.Element => {
   return (
     <section className="relative w-full overflow-hidden bg-pink">
       <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-12 px-6 py-16 sm:px-10 md:px-16 lg:flex-row lg:items-start lg:gap-[60px] lg:px-[124px] lg:py-[124px]">
@@ -122,7 +122,7 @@ export const ContactFormSection = (): JSX.Element => {
           </Button>
         </form>
       </div>
-      <div className="pointer-events-none absolute left-0 top-1/2 hidden h-[221px] w-[221px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#fc3314] lg:block" />
+      <div className="pointer-events-none absolute left-0 top-1/2 hidden h-[221px] w-[221px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#2471a3] lg:block" />
     </section>
   );
 };

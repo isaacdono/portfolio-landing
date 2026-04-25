@@ -27,7 +27,7 @@ const testimonial = {
 
 export const TestimonialsHighlightSection = (): JSX.Element => {
   return (
-    <section className="relative w-full bg-[#ffd3d0] px-6 pb-16 pt-[72px] md:px-12 lg:px-[124px] lg:pt-[90px]">
+    <section className="relative w-full bg-[#e3eafc] px-6 pb-16 pt-[72px] md:px-12 lg:px-[124px] lg:pt-[90px]">
       <img
         className="pointer-events-none absolute left-1/2 top-[-61px] h-[122px] w-[122px] -translate-x-1/2"
         alt="Background"

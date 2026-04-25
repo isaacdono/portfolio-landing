@@ -2,45 +2,38 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const portfolioItems = [
   {
-    title: "Educational Platform",
-    category: "Web Design / Usability Testing",
+    title: "Chatbot para WhatsApp",
+    category: "IA, Automação, Google Sheets/Agenda",
     imageSrc: "/figmaAssets/image.png",
-    imageAlt: "Educational Platform",
+    imageAlt: "Chatbot WhatsApp",
     imageClassName: "object-cover",
   },
   {
-    title: "Travel App Design",
-    category: "UX Research / App Design",
+    title: "Relatórios Inteligentes",
+    category: "Automação, IA, WhatsApp",
     imageSrc: "/figmaAssets/image-9.svg",
-    imageAlt: "Travel App Design",
+    imageAlt: "Relatórios IA",
     imageClassName: "object-cover",
   },
   {
-    title: "Personal Page",
-    category: "Web Design",
+    title: "Projeto de Robótica (CTI)",
+    category: "IA Generativa, Multimodalidade",
     imageSrc: "/figmaAssets/image-1.png",
-    imageAlt: "Personal Page",
+    imageAlt: "Robótica CTI",
     imageClassName: "object-cover",
   },
   {
-    title: "Furniture Mobile App",
-    category: "App Design",
+    title: "Estágio CPQD",
+    category: "Chatbots, Langgraph, FastAPI, Docker",
     imageSrc: "/figmaAssets/image-8.svg",
-    imageAlt: "Furniture Mobile App",
+    imageAlt: "CPQD",
     imageClassName: "object-cover",
   },
   {
-    title: "Coffee House Landing Page",
-    category: "UX Research / Web Design",
+    title: "Estágio Eldorado",
+    category: "Testes, Relatórios, Google Drive",
     imageSrc: "/figmaAssets/image-2.png",
-    imageAlt: "Coffee House Landing Page",
-    imageClassName: "object-cover",
-  },
-  {
-    title: "Home Services Page",
-    category: "Web Design / Marketing",
-    imageSrc: "/figmaAssets/image-3.png",
-    imageAlt: "Home Services Page",
+    imageAlt: "Eldorado",
     imageClassName: "object-cover",
   },
 ];
@@ -48,16 +41,14 @@ const portfolioItems = [
 export const PortfolioGallerySection = (): JSX.Element => {
   return (
     <section className="w-full bg-grey">
-      <div className="w-full bg-[#ffd3d0]">
+      <div className="w-full bg-[#e3eafc]">
         <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center justify-center px-6 pb-[142px] pt-[50px] sm:px-10 lg:px-[124px]">
           <header className="flex w-full max-w-[810px] flex-col items-center justify-center gap-6 text-center">
             <h2 className="mt-[-1.00px] w-fit whitespace-nowrap font-text-4xl-font-bold text-[length:var(--text-4xl-font-bold-font-size)] font-[number:var(--text-4xl-font-bold-font-weight)] leading-[var(--text-4xl-font-bold-line-height)] tracking-[var(--text-4xl-font-bold-letter-spacing)] text-[#1f1f1f] [font-style:var(--text-4xl-font-bold-font-style)]">
-              My Portfolio
+              Experiências & Projetos
             </h2>
             <p className="max-w-[810px] font-text-base-font-normal text-[length:var(--text-base-font-normal-font-size)] font-[number:var(--text-base-font-normal-font-weight)] leading-[var(--text-base-font-normal-line-height)] tracking-[var(--text-base-font-normal-letter-spacing)] text-dark [font-style:var(--text-base-font-normal-font-style)]">
-              Explore my design services, from user interface and experience to
-              prototyping and testing. Let&#39;s craft exceptional digital
-              experiences together.
+              Veja alguns projetos acadêmicos, experiências de estágio e soluções de automação/IA que já desenvolvi. Para mais detalhes, acesse meu GitHub ou entre em contato!
             </p>
           </header>
         </div>
@@ -87,11 +78,17 @@ export const PortfolioGallerySection = (): JSX.Element => {
                           {item.category}
                         </p>
                       </div>
-                      <img
-                        className="h-auto w-auto shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                        alt="Vuesax linear send"
-                        src="/figmaAssets/vuesax-linear-send.svg"
-                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={2}
+                        stroke="#2471a3"
+                        className="h-7 w-7 shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                        aria-hidden="true"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+                      </svg>
                     </div>
                   </button>
                 </CardContent>

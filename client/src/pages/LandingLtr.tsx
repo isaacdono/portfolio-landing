@@ -1,9 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { AboutProfileSection } from "./sections/AboutProfileSection";
-import { ContactFormSection } from "./sections/ContactFormSection";
+import { ForWhoSection } from "./sections/ForWhoSection";
+// import { ContactFormSection } from "./sections/ContactFormSection";
 import { FooterNavigationSection } from "./sections/FooterNavigationSection";
 import { HeroIntroSection } from "./sections/HeroIntroSection";
-import { InsightsBlogSection } from "./sections/InsightsBlogSection";
+// import { InsightsBlogSection } from "./sections/InsightsBlogSection";
 import { PortfolioGallerySection } from "./sections/PortfolioGallerySection";
 import { ServiceOverviewSection } from "./sections/ServiceOverviewSection";
 import { SkillsMetricsSection } from "./sections/SkillsMetricsSection";
@@ -11,13 +11,9 @@ import { TestimonialsHighlightSection } from "./sections/TestimonialsHighlightSe
 
 const sections = [
   { id: "hero-intro", Component: HeroIntroSection },
-  { id: "about-profile", Component: AboutProfileSection },
+  { id: "for-who", Component: ForWhoSection },
   { id: "service-overview", Component: ServiceOverviewSection },
   { id: "portfolio-gallery", Component: PortfolioGallerySection },
-  { id: "skills-metrics", Component: SkillsMetricsSection },
-  { id: "testimonials-highlight", Component: TestimonialsHighlightSection },
-  { id: "insights-blog", Component: InsightsBlogSection },
-  { id: "contact-form", Component: ContactFormSection },
   { id: "footer-navigation", Component: FooterNavigationSection },
 ];
 

@@ -1,9 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 
 const stats = [
-  { value: "502", label: "Projects Done" },
-  { value: "10+", label: "Years of Experience" },
-  { value: "273+", label: "Clients Served" },
+  { value: "2", label: "Estágios em Tech" },
+  { value: "5+", label: "Projetos de IA/Automação" },
+  { value: "C1", label: "Inglês Avançado" },
 ];
 
 export const AboutProfileSection = (): JSX.Element => {
@@ -11,15 +11,11 @@ export const AboutProfileSection = (): JSX.Element => {
     <section className="relative w-full overflow-hidden bg-dark px-6 py-16 md:px-10 lg:px-20 xl:px-[188px]">
       <div className="mx-auto flex w-full max-w-[1064px] flex-col items-center gap-8">
         <header className="flex w-full max-w-[810px] flex-col items-center gap-6 text-center">
-          <h2 className="mt-[-1.00px] font-text-4xl-font-bold text-[length:var(--text-4xl-font-bold-font-size)] font-[number:var(--text-4xl-font-bold-font-weight)] leading-[var(--text-4xl-font-bold-line-height)] tracking-[var(--text-4xl-font-bold-letter-spacing)] text-white [font-style:var(--text-4xl-font-bold-font-style)]">
-            About Me
+          <h2 className="mt-[-1.00px] font-text-4xl-font-bold text-[length:var(--text-4xl-font-bold-size)] font-[number:var(--text-4xl-font-bold-font-weight)] leading-[var(--text-4xl-font-bold-line-height)] tracking-[var(--text-4xl-font-bold-letter-spacing)] text-white [font-style:var(--text-4xl-font-bold-font-style)]">
+            Sobre mim
           </h2>
           <p className="font-text-base-font-normal text-[length:var(--text-base-font-normal-font-size)] font-[number:var(--text-base-font-normal-font-weight)] leading-[var(--text-base-font-normal-line-height)] tracking-[var(--text-base-font-normal-letter-spacing)] text-white [font-style:var(--text-base-font-normal-font-style)]">
-            I&apos;m Sara Jones, a UI/UX designer dedicated to crafting
-            intuitive and visually stunning digital experiences. With a passion
-            for user-centric design, I transform ideas into functional and
-            beautiful interfaces. Let&apos;s collaborate and shape the future of
-            design together.
+            Olá! Sou Isaac Oliveira, estudante de Engenharia de Computação na UNICAMP e apaixonado por tecnologia, automações e inteligência artificial. Tenho experiência prática em projetos de integração de plataformas, chatbots para WhatsApp, automação de relatórios e uso de ferramentas como n8n, Docker e FastAPI. Já atuei em estágios no CPQD (IA/ML) e no Instituto Eldorado (Testes e Relatórios), além de participar de projetos acadêmicos em robótica e IA generativa. Busco ajudar empresas e pessoas a automatizar processos, integrar sistemas e criar soluções inteligentes sob medida.
           </p>
         </header>
         <Card className="w-full border-0 bg-transparent shadow-none">

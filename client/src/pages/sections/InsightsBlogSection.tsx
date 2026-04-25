@@ -30,7 +30,7 @@ const posts = [
   },
 ];
 
-export const InsightsBlogSection = (): JSX.Element => {
+// export const InsightsBlogSection = (): JSX.Element => {
   return (
     <section className="relative w-full bg-grey px-6 py-[90px] sm:px-10 lg:px-[124px]">
       <div className="mx-auto flex w-full max-w-[1192px] flex-col items-center gap-12">
