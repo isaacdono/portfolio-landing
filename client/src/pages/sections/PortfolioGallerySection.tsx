@@ -8,7 +8,7 @@ export const PortfolioGallerySection = (): JSX.Element => {
           <div className="shrink-0">
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-3xl bg-slate-200 overflow-hidden border-4 border-slate-900 shadow-xl">
               <img 
-                src="/figmaAssets/20260411_093054.jpg.jpeg" 
+                src="figmaAssets/20260411_093054.jpg.jpeg" 
                 alt="Isaac Oliveira" 
                 className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-500"
               />

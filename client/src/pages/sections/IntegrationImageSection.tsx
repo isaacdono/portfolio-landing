@@ -12,7 +12,7 @@ export const IntegrationImageSection = (): JSX.Element => {
           
           <div className="relative rounded-[2.5rem] overflow-hidden border border-slate-100 shadow-2xl bg-slate-50">
             <img 
-              src="/figmaAssets/workflow2-1.png" 
+              src="figmaAssets/workflow2-1.png" 
               alt="Fluxo de Automação n8n" 
               className="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity duration-500"
             />
