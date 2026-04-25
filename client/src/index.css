@@ -1,252 +1,58 @@
-@import url("https://fonts.googleapis.com/css?family=Inter:var(--text-3xl-font-semibold-font-weight),400,700,var(--text-4xl-font-semibold-font-weight)|Montserrat:var(--text-4xl-font-bold-font-weight),var(--text-lg-font-bold-font-weight),var(--text-base-font-bold-font-weight),700,var(--text-xs-font-normal-font-weight),var(--text-xs-font-bold-font-weight),var(--text-sm-font-normal-font-weight),400,var(--text-base-font-normal-font-weight),var(--text-xl-font-bold-font-weight)");
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .all-\[unset\] {
-    all: unset;
-  }
-}
-
 :root {
-  --dark: #0a2342;
-  --dark-grey: #274472;
-  --grey: #e3eafc;
-  --medium-grey: #b3c7e6;
-  --pink: #a3cef1;
-  --red: #2471a3;
-  --text-3xl-font-semibold-font-family: "Inter", Helvetica;
-  --text-3xl-font-semibold-font-size: 30px;
-  --text-3xl-font-semibold-font-style: normal;
-  --text-3xl-font-semibold-font-weight: 600;
-  --text-3xl-font-semibold-letter-spacing: 0px;
-  --text-3xl-font-semibold-line-height: 150%;
-  --text-4xl-font-bold-font-family: "Montserrat", Helvetica;
-  --text-4xl-font-bold-font-size: 36px;
-  --text-4xl-font-bold-font-style: normal;
-  --text-4xl-font-bold-font-weight: 700;
-  --text-4xl-font-bold-letter-spacing: 0px;
-  --text-4xl-font-bold-line-height: 150%;
-  --text-4xl-font-semibold-font-family: "Inter", Helvetica;
-  --text-4xl-font-semibold-font-size: 36px;
-  --text-4xl-font-semibold-font-style: normal;
-  --text-4xl-font-semibold-font-weight: 600;
-  --text-4xl-font-semibold-letter-spacing: 0px;
-  --text-4xl-font-semibold-line-height: 150%;
-  --text-base-font-bold-font-family: "Montserrat", Helvetica;
-  --text-base-font-bold-font-size: 16px;
-  --text-base-font-bold-font-style: normal;
-  --text-base-font-bold-font-weight: 700;
-  --text-base-font-bold-letter-spacing: 0px;
-  --text-base-font-bold-line-height: 150%;
-  --text-base-font-normal-font-family: "Montserrat", Helvetica;
-  --text-base-font-normal-font-size: 16px;
-  --text-base-font-normal-font-style: normal;
-  --text-base-font-normal-font-weight: 400;
-  --text-base-font-normal-letter-spacing: 0px;
-  --text-base-font-normal-line-height: 150%;
-  --text-lg-font-bold-font-family: "Montserrat", Helvetica;
-  --text-lg-font-bold-font-size: 18px;
-  --text-lg-font-bold-font-style: normal;
-  --text-lg-font-bold-font-weight: 700;
-  --text-lg-font-bold-letter-spacing: 0px;
-  --text-lg-font-bold-line-height: 130%;
-  --text-sm-font-normal-font-family: "Montserrat", Helvetica;
-  --text-sm-font-normal-font-size: 14px;
-  --text-sm-font-normal-font-style: normal;
-  --text-sm-font-normal-font-weight: 400;
-  --text-sm-font-normal-letter-spacing: 0px;
-  --text-sm-font-normal-line-height: 150%;
-  --text-xl-font-bold-font-family: "Montserrat", Helvetica;
-  --text-xl-font-bold-font-size: 20px;
-  --text-xl-font-bold-font-style: normal;
-  --text-xl-font-bold-font-weight: 700;
-  --text-xl-font-bold-letter-spacing: 0px;
-  --text-xl-font-bold-line-height: 150%;
-  --text-xs-font-bold-font-family: "Montserrat", Helvetica;
-  --text-xs-font-bold-font-size: 12px;
-  --text-xs-font-bold-font-style: normal;
-  --text-xs-font-bold-font-weight: 700;
-  --text-xs-font-bold-letter-spacing: 0px;
-  --text-xs-font-bold-line-height: 150%;
-  --text-xs-font-normal-font-family: "Montserrat", Helvetica;
-  --text-xs-font-normal-font-size: 12px;
-  --text-xs-font-normal-font-style: normal;
-  --text-xs-font-normal-font-weight: 400;
-  --text-xs-font-normal-letter-spacing: 0px;
-  --text-xs-font-normal-line-height: 150%;
-  --white: #fafdff;
-  --animate-spin: spin 1s linear infinite;
-}
-
-.animate-fade-in {
-  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
-}
-
-.animate-fade-up {
-  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
-}
-
-.animate-marquee {
-  animation: marquee var(--duration) infinite linear;
-}
-
-.animate-marquee-vertical {
-  animation: marquee-vertical var(--duration) linear infinite;
-}
-
-.animate-shimmer {
-  animation: shimmer 8s infinite;
-}
-
-.animate-spin {
-  animation: var(--animate-spin);
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(1turn);
-  }
-}
-
-@keyframes image-glow {
-  0% {
-    opacity: 0;
-    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
-  }
-
-  10% {
-    opacity: 0.7;
-    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
-  }
-
-  to {
-    opacity: 0.4;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes shimmer {
-  0%,
-  90%,
-  to {
-    background-position: calc(-100% - var(--shimmer-width)) 0;
-  }
-
-  30%,
-  60% {
-    background-position: calc(100% + var(--shimmer-width)) 0;
-  }
-}
-
-@keyframes marquee {
-  0% {
-    transform: translate(0);
-  }
-
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
-  }
-}
-
-@keyframes marquee-vertical {
-  0% {
-    transform: translateY(0);
-  }
-
-  to {
-    transform: translateY(calc(-100% - var(--gap)));
-  }
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+  --primary: 175 100% 33%;
+  --accent: 221 83% 53%;
+  --font-heading: 'Sora', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
 }
 
 @layer base {
-  :root {
-    --background: 210 60% 98%;
-    --foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --popover: 210 60% 98%;
-    --popover-foreground: 222.2 47.4% 11.2%;
-    --border: 210 40% 85%;
-    --input: 210 40% 85%;
-    --card: transparent;
-    --card-foreground: 222.2 47.4% 11.2%;
-    --primary: 217 91% 60%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 60% 90%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --accent: 210 60% 90%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 210 100% 40%;
-    --destructive-foreground: 210 40% 98%;
-    --ring: 217 91% 60%;
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 217 91% 20%;
-    --foreground: 210 40% 98%;
-    --muted: 217 91% 30%;
-    --muted-foreground: 210 40% 98%;
-    --accent: 217 91% 30%;
-    --accent-foreground: 210 40% 98%;
-    --popover: 217 91% 20%;
-    --popover-foreground: 210 40% 98%;
-    --border: 217 91% 30%;
-    --input: 217 91% 30%;
-    --card: transparent;
-    --card-foreground: 210 40% 98%;
-    --primary: 217 91% 60%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 217 91% 30%;
-    --secondary-foreground: 210 40% 98%;
-    --destructive: 210 100% 40%;
-    --destructive-foreground: 210 40% 98%;
-    --ring: 217 91% 60%;
-    --radius: 0.5rem;
-  }
-
-  * {
-    @apply border-border;
-  }
-
-  html {
-    @apply scroll-smooth;
-  }
-
   body {
-    @apply m-0 min-h-screen bg-background text-foreground antialiased;
-    font-feature-settings:
-      "rlig" 1,
-      "calt" 1;
+    font-family: var(--font-body);
+    @apply bg-white text-slate-900 antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    @apply tracking-tight font-extrabold;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-2xl border border-slate-100 shadow-xl;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  #root {
-    @apply min-h-screen;
+  .glass-card:hover {
+    @apply border-slate-200 shadow-2xl;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-slate-700 to-slate-800;
+  }
+
+  .noise-bg {
+    position: relative;
+  }
+  
+  .noise-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.02;
+    z-index: 1;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   }
 }

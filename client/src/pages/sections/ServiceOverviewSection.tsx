@@ -1,85 +1,74 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
+import { MessageCircle, CalendarDays, Share2, LineChart, Cpu, Bot, ArrowRight } from "lucide-react";
 
 const services = [
   {
-    title: "Automações e Integrações",
-    description:
-      "Automatize processos e conecte plataformas (Google Sheets, APIs, bancos de dados) usando n8n, Python e Node.js.",
-    icon: (
-      <img
-        className="h-[53.97px] w-[47.98px]"
-        alt="Automação"
-        src="/figmaAssets/vector-blue.svg"
-      />
-    ),
+    title: "Chatbots de Alta Conversão",
+    description: "IA que não parece robô. Tira dúvidas, apresenta cardápio e qualifica leads 24h por dia no WhatsApp.",
+    icon: <Bot className="w-12 h-12 text-teal-600" />,
+    className: "md:col-span-2 md:row-span-2 bg-slate-50 border-slate-100",
   },
   {
-    title: "Chatbots e IA",
-    description:
-      "Desenvolvimento de chatbots inteligentes para WhatsApp, atendimento automatizado, agentes de IA e integração com IA generativa.",
-    icon: (
-      <div className="inline-flex h-[54px] items-center">
-        <div className="h-11 w-11 rounded-full border-2 border-solid border-[#2471a3]" />
-        <div className="-ml-[22px] h-11 w-11 rounded-full border-2 border-solid border-[#2471a3]" />
-        <div className="-ml-[22px] h-11 w-11 rounded-full border-2 border-solid border-[#2471a3]" />
-      </div>
-    ),
+    title: "Agendamento Inteligente",
+    description: "Sincronização em tempo real com sua agenda Google.",
+    icon: <CalendarDays className="w-8 h-8 text-blue-600" />,
+    className: "bg-white border-slate-100",
   },
   {
-    title: "Backend e APIs",
-    description:
-      "Criação de backends robustos, APIs REST/GraphQL, integrações com bancos de dados e serviços em nuvem (AWS, GCP, Azure).",
-    icon: (
-      <div
-        className="h-[54px] w-[54px] bg-[url(/figmaAssets/search-status.png)] bg-[100%_100%] bg-no-repeat"
-        aria-hidden="true"
-      />
-    ),
+    title: "Integrações",
+    description: "WhatsApp + Sheets + CRM.",
+    icon: <Share2 className="w-8 h-8 text-slate-500" />,
+    className: "bg-white border-slate-100",
   },
   {
-    title: "Cloud e Relatórios Inteligentes",
-    description:
-      "Implantação de soluções em cloud, automação de relatórios e dashboards inteligentes enviados direto para seu WhatsApp ou e-mail.",
-    icon: (
-      <div className="flex h-[54px] w-[54px] items-center justify-center">
-        <img
-          className="h-12 w-[48.11px]"
-          alt="Cloud"
-          src="/figmaAssets/vuesax-linear-task-blue.svg"
-        />
-      </div>
-    ),
+    title: "Automação de Processos",
+    description: "Sistemas robustos usando Node.js, n8n e Python para escalar sua operação.",
+    icon: <Cpu className="w-10 h-10 text-teal-600" />,
+    className: "md:col-span-2 bg-white border-slate-100 shadow-sm",
   },
 ];
 
 export const ServiceOverviewSection = (): JSX.Element => {
   return (
-    <section className="relative w-full bg-white px-6 py-16 sm:px-10 lg:px-[124px]">
-      <div className="mx-auto flex w-full max-w-[1192px] flex-col items-center justify-center gap-8">
-        <header className="flex w-full max-w-[810px] flex-col items-center gap-6 text-center">
-          <h2 className="font-text-4xl-font-bold text-[length:var(--text-4xl-font-bold-font-size)] font-[number:var(--text-4xl-font-bold-font-weight)] leading-[var(--text-4xl-font-bold-line-height)] tracking-[var(--text-4xl-font-bold-letter-spacing)] text-[#1f1f1f] [font-style:var(--text-4xl-font-bold-font-style)]">
-            Serviços
+    <section className="relative w-full py-32 bg-white">
+      <div className="mx-auto w-full max-w-[1440px] px-6 md:px-10 lg:px-[124px]">
+        
+        <div className="flex flex-col gap-6 mb-20 text-center items-center">
+          <h2 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tighter">
+            SOLUÇÕES <br />
+            <span className="text-teal-600 italic font-serif">PROFISSIONAIS.</span>
           </h2>
-          <p className="font-text-base-font-normal text-[length:var(--text-base-font-normal-font-size)] font-[number:var(--text-base-font-normal-font-weight)] leading-[var(--text-base-font-normal-line-height)] tracking-[var(--text-base-font-normal-letter-spacing)] text-dark [font-style:var(--text-base-font-normal-font-style)]">
-            Soluções sob medida em automações, IA, integrações, chatbots, backend e cloud para transformar o seu negócio.
-          </p>
-        </header>
-        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-          {services.map((service) => (
-            <Card
+          <div className="h-1.5 w-24 bg-teal-500 rounded-full" />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <motion.div
               key={service.title}
-              className="h-full border-0 bg-transparent shadow-none"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className={`p-10 rounded-[3rem] border group flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-teal-200 ${service.className}`}
             >
-              <CardContent className="flex h-full flex-col items-start gap-6 p-4">
-                <div className="shrink-0">{service.icon}</div>
-                <h3 className="w-full font-text-lg-font-bold text-[length:var(--text-lg-font-bold-font-size)] font-[number:var(--text-lg-font-bold-font-weight)] leading-[var(--text-lg-font-bold-line-height)] tracking-[var(--text-lg-font-bold-letter-spacing)] text-[#1f1f1f] [font-style:var(--text-lg-font-bold-font-style)]">
-                  {service.title}
-                </h3>
-                <p className="w-full font-text-sm-font-normal text-[length:var(--text-sm-font-normal-font-size)] font-[number:var(--text-sm-font-normal-font-weight)] leading-[var(--text-sm-font-normal-line-height)] tracking-[var(--text-sm-font-normal-letter-spacing)] text-dark [font-style:var(--text-sm-font-normal-font-style)]">
-                  {service.description}
-                </p>
-              </CardContent>
-            </Card>
+              <div className="space-y-8">
+                <div className="p-5 rounded-3xl bg-white shadow-sm w-fit group-hover:scale-110 transition-transform duration-500">
+                  {service.icon}
+                </div>
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+                    {service.title}
+                  </h3>
+                  <p className="text-lg text-slate-500 font-medium leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+              
+              <div className="mt-8 flex items-center gap-2 text-teal-600 font-bold text-sm uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+                Saber mais <ArrowRight className="w-4 h-4" />
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>
