@@ -13,9 +13,9 @@ export const FooterNavigationSection = (): JSX.Element => {
         </p>
 
         <a href="https://wa.me/5512997704762" target="_blank" rel="noopener noreferrer">
-          <Button className="h-14 rounded-xl bg-slate-900 !text-white px-10 text-lg font-bold hover:bg-teal-600 transition-colors shadow-lg">
+          <Button className="h-14 rounded-xl bg-[#25D366] !text-black px-10 text-lg font-bold hover:bg-[#25D366] shadow-lg border-0">
             Conversar no WhatsApp
-            <MessageCircle className="ml-2 h-6 w-6" />
+            <MessageCircle className="ml-2 h-6 w-6 !text-black" />
           </Button>
         </a>
 

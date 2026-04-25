@@ -9,7 +9,7 @@ export const ServiceOverviewSection = (): JSX.Element => {
           <div className="space-y-4">
             <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tighter leading-none">
               Soluções de <br />
-              <span className="text-teal-600">Integração e Automação.</span>
+              <span className="text-[#25D366]">Integração e Automação.</span>
             </h2>
             <p className="text-lg text-slate-500 font-medium">
               Conecte suas ferramentas e deixe o trabalho repetitivo no automático.
@@ -19,7 +19,7 @@ export const ServiceOverviewSection = (): JSX.Element => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
             <div className="flex gap-4">
               <div className="w-10 h-10 shrink-0 rounded-lg bg-slate-50 border border-slate-100 flex items-center justify-center">
-                <TableProperties className="w-5 h-5 text-teal-600" />
+                <TableProperties className="w-5 h-5 text-[#25D366]" />
               </div>
               <div className="space-y-2">
                 <h3 className="font-bold text-slate-900">WhatsApp + Planilhas</h3>
@@ -31,7 +31,7 @@ export const ServiceOverviewSection = (): JSX.Element => {
 
             <div className="flex gap-4">
               <div className="w-10 h-10 shrink-0 rounded-lg bg-slate-50 border border-slate-100 flex items-center justify-center">
-                <Calendar className="w-5 h-5 text-teal-600" />
+                <Calendar className="w-5 h-5 text-[#25D366]" />
               </div>
               <div className="space-y-2">
                 <h3 className="font-bold text-slate-900">Agenda e Reservas</h3>
@@ -43,7 +43,7 @@ export const ServiceOverviewSection = (): JSX.Element => {
 
             <div className="flex gap-4">
               <div className="w-10 h-10 shrink-0 rounded-lg bg-slate-50 border border-slate-100 flex items-center justify-center">
-                <Share2 className="w-5 h-5 text-teal-600" />
+                <Share2 className="w-5 h-5 text-[#25D366]" />
               </div>
               <div className="space-y-2">
                 <h3 className="font-bold text-slate-900">Sincronização de CRM</h3>
@@ -55,7 +55,7 @@ export const ServiceOverviewSection = (): JSX.Element => {
 
             <div className="flex gap-4">
               <div className="w-10 h-10 shrink-0 rounded-lg bg-slate-50 border border-slate-100 flex items-center justify-center">
-                <LayoutDashboard className="w-5 h-5 text-teal-600" />
+                <LayoutDashboard className="w-5 h-5 text-[#25D366]" />
               </div>
               <div className="space-y-2">
                 <h3 className="font-bold text-slate-900">Dashboards Operacionais</h3>
@@ -67,7 +67,7 @@ export const ServiceOverviewSection = (): JSX.Element => {
 
             <div className="flex gap-4">
               <div className="w-10 h-10 shrink-0 rounded-lg bg-slate-50 border border-slate-100 flex items-center justify-center">
-                <MessageSquare className="w-5 h-5 text-teal-600" />
+                <MessageSquare className="w-5 h-5 text-[#25D366]" />
               </div>
               <div className="space-y-2">
                 <h3 className="font-bold text-slate-900">Atendimento Inteligente</h3>
@@ -79,7 +79,7 @@ export const ServiceOverviewSection = (): JSX.Element => {
 
             <div className="flex gap-4">
               <div className="w-10 h-10 shrink-0 rounded-lg bg-slate-50 border border-slate-100 flex items-center justify-center">
-                <Zap className="w-5 h-5 text-teal-600" />
+                <Zap className="w-5 h-5 text-[#25D366]" />
               </div>
               <div className="space-y-2">
                 <h3 className="font-bold text-slate-900">Integração via APIs</h3>

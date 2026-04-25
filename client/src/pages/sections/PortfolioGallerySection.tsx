@@ -19,7 +19,7 @@ export const PortfolioGallerySection = (): JSX.Element => {
           <div className="flex-1 space-y-6">
             <h2 className="text-3xl font-bold text-slate-900 tracking-tight">Isaac Oliveira</h2>
             <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
-              Engenheiro de Computação em formação pela <span className="font-bold text-slate-900 underline decoration-teal-500 underline-offset-4">UNICAMP</span>. 
+              Engenheiro de Computação em formação pela <span className="font-bold text-slate-900 underline decoration-[#25D366] underline-offset-4">UNICAMP</span>. 
               Especialista em automação de fluxos de trabalho, integrações de sistemas e inteligência aplicada. 
               Experiência técnica consolidada no <span className="font-bold text-slate-900">CPQD</span> e <span className="font-bold text-slate-900">Instituto Eldorado</span>.
             </p>
