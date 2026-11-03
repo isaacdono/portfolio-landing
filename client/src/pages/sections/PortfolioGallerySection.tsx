@@ -1,3 +1,5 @@
+import { FaLinkedin } from "react-icons/fa";
+
 export const PortfolioGallerySection = (): JSX.Element => {
   return (
     <section className="w-full py-16 bg-slate-50 border-t border-slate-100">
@@ -17,7 +19,18 @@ export const PortfolioGallerySection = (): JSX.Element => {
 
           {/* Texto e Tags */}
           <div className="flex-1 space-y-6">
-            <h2 className="text-3xl font-bold text-[#25D366] tracking-tight">Isaac Oliveira</h2>
+            <div className="flex items-center gap-3">
+              <h2 className="text-3xl font-bold text-[#25D366] tracking-tight">Isaac Oliveira</h2>
+              <a
+                href="https://www.linkedin.com/in/isaacdonoliv"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn de Isaac Oliveira"
+                className="text-[#0A66C2] transition-opacity hover:opacity-80"
+              >
+                <FaLinkedin className="h-7 w-7" aria-hidden="true" />
+              </a>
+            </div>
             <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
               Estudante de Engenharia de Computação na <span className="font-bold text-slate-900 underline decoration-[#25D366] underline-offset-4">UNICAMP</span>. 
               Trabalho com automação de processos, integrações de sistemas e IA aplicada para reduzir tarefas manuais e organizar operações.
